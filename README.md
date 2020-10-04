@@ -31,5 +31,8 @@
 
 7. Now create cluster using kops refer to point 3
 
+   aws ec2 describe-availability-zones --region ap-south-1      // to check AZ
+
+
    - kops create cluster --name dev.k8s.rajeshjaybhaye.com --zones us-east-1a --master-size t2.micro --node-size t2.micro --master-count 1 --node-count 2 --master-volume-size 15 --node-volume-size 12 --dns-zone=rajeshjaybhaye.com --dns private
 
