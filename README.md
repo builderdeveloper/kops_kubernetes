@@ -25,7 +25,7 @@
    - aws s3api put-bucket-versioning --bucket dev.k8s.rajesh.com  --versioning-configuration    Status=Enabled
 
    Now we are going to export kops state environment variable
-   - export KOPS_STATE_STORE=s3://dev.k8s.rajesh.com
+   - export KOPS_STATE_STORE=s3://k8s.rajesh.com
 
 6. Create route53 dns with name rajesh.com which should be private 
 
