@@ -22,7 +22,7 @@
    - aws s3api create-bucket --bucket dev.k8s.rajesh.com  
 
    Now will do versioning of bucket, because incase if we upgrade cluster version and later it has some glitches so we can roll back to previous version
-   - aws s3api put-bucket-versioning --bucket dev.k8s.rajesh.com  --versioning-configuration    Status=Enabled
+   - aws s3api put-bucket-versioning --bucket k8s.rajesh.com  --versioning-configuration    Status=Enabled
 
    Now we are going to export kops state environment variable
    - export KOPS_STATE_STORE=s3://k8s.rajesh.com
